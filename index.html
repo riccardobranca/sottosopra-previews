@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Sottosopra — Preview Homepage (10 direzioni)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: "SoSo26";
+    src: url("fonts/SoSo26.woff") format("woff"), url("fonts/SoSo26.otf") format("opentype");
+    font-weight: 400; font-style: normal; font-display: swap;
+  }
+  :root { --bg:#000; --fg:#fff; --muted:#9a9a9a; --line:#262626; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--fg); font-family: "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased; line-height: 1.5; }
+  .display { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08","liga","calt"; line-height: 0.95; text-transform: uppercase; }
+  .label { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 5vw; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 0; }
+  header img { height: 18px; width: auto; margin-bottom: 2.5rem; }
+  h1 { font-size: clamp(2.5rem, 7vw, 6rem); margin-bottom: 1rem; }
+  header p { color: var(--muted); max-width: 40rem; }
+  ul { list-style: none; }
+  li a {
+    display: grid; grid-template-columns: 4rem 1fr auto; gap: 1.5rem; align-items: baseline;
+    padding: 1.75rem 0; border-bottom: 1px solid var(--line);
+    color: var(--fg); text-decoration: none; transition: background 0.15s, padding 0.15s;
+  }
+  li a:hover { background: var(--fg); color: var(--bg); padding-left: 1rem; padding-right: 1rem; }
+  li a:hover .label, li a:hover .one { color: inherit; }
+  .num { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08"; font-size: 1.75rem; }
+  .name { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08","liga","calt"; text-transform: uppercase; font-size: clamp(1.5rem, 3vw, 2.5rem); }
+  .one { color: var(--muted); font-size: 0.95rem; max-width: 32rem; }
+  .go { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; white-space: nowrap; }
+  footer { color: var(--muted); font-size: 0.8rem; padding-top: 3rem; }
+  @media (max-width: 720px) {
+    li a { grid-template-columns: 2.5rem 1fr; }
+    .go { display: none; }
+    .one { grid-column: 2; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="brand/sottosopra-logo-white.png" alt="Sottosopra" />
+    <h1 class="display">10 direzioni</h1>
+    <p>Preview di homepage per il sito Sottosopra 2026. Stessa identità (logo, font SoSo26, bianco e nero), dieci approcci grafici diversi. Clicca per aprire. <strong style="color:#fff">Suggerimento:</strong> scrolla ogni pagina e, dove c'è, premi <kbd>S</kbd> per il ribaltamento.</p>
+  </header>
+  <ul>
+    <li><a href="v1.html"><span class="num">01</span><span><span class="name">Locandina</span><br><span class="one">Poster da concerto: denso, regoli, date come ancore, lineup giustificata.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v2.html"><span class="num">02</span><span><span class="name">Sistema Grezzo</span><br><span class="one">Brutalist/terminale: ticker, griglia esposta, label di sistema, coordinate.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v3.html"><span class="num">03</span><span><span class="name">Rivista</span><br><span class="one">Editorial indie: drop-cap, pull-quote, sezioni numerate, colophon.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v4.html"><span class="num">04</span><span><span class="name">Tipografia in Corsa</span><br><span class="one">Kinetic: nastri multipli a velocità diverse, tipografia in movimento.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v5.html"><span class="num">05</span><span><span class="name">Indice</span><br><span class="one">Catalogo tipografico riga-per-riga, austero, con hover che rivela.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v6.html"><span class="num">06</span><span><span class="name">Date Monstre</span><br><span class="one">I numeri 31·01·02 giganti come griglia portante della pagina.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v7.html"><span class="num">07</span><span><span class="name">Collage Controllato</span><br><span class="one">Fanzine/ransom-note: lettere ruotate, nastro adesivo, carta a quadretti.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v8.html"><span class="num">08</span><span><span class="name">Pannelli</span><br><span class="one">Split-screen modulare: hero a pannelli verticali, un artista ciascuno.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v9.html"><span class="num">09</span><span><span class="name">Manifesto</span><br><span class="one">Dichiarazione gigante: "Non è un festival. È un modo di stare al mondo."</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v10.html"><span class="num">10</span><span><span class="name">Capovolta</span><br><span class="one">Il concetto sottosopra reso layout: hero spaccato e specchiato.</span></span><span class="go">Apri →</span></a></li>
+  </ul>
+  <footer>Sottosopra APS · preview interne · bozze placeholder, non definitive · giugno 2026</footer>
+</div>
+</body>
+</html>
