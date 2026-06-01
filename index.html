@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex" />
-<title>Sottosopra — Preview Homepage (10 direzioni)</title>
+<title>Sottosopra — Preview Homepage (20 direzioni)</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   @font-face {
@@ -18,23 +18,25 @@
   .display { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08","liga","calt"; line-height: 0.95; text-transform: uppercase; }
   .label { font-size: 0.75rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.18em; color: var(--muted); }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 5vw; }
-  header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 0; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 2rem; margin-bottom: 3rem; }
   header img { height: 18px; width: auto; margin-bottom: 2.5rem; }
   h1 { font-size: clamp(2.5rem, 7vw, 6rem); margin-bottom: 1rem; }
-  header p { color: var(--muted); max-width: 40rem; }
+  header p { color: var(--muted); max-width: 42rem; }
+  h2.section { font-size: clamp(1.5rem,3vw,2.25rem); margin: 3.5rem 0 0.25rem; }
+  .section-sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.5rem; }
   ul { list-style: none; }
   li a {
     display: grid; grid-template-columns: 4rem 1fr auto; gap: 1.5rem; align-items: baseline;
-    padding: 1.75rem 0; border-bottom: 1px solid var(--line);
+    padding: 1.5rem 0; border-bottom: 1px solid var(--line);
     color: var(--fg); text-decoration: none; transition: background 0.15s, padding 0.15s;
   }
   li a:hover { background: var(--fg); color: var(--bg); padding-left: 1rem; padding-right: 1rem; }
-  li a:hover .label, li a:hover .one { color: inherit; }
-  .num { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08"; font-size: 1.75rem; }
-  .name { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08","liga","calt"; text-transform: uppercase; font-size: clamp(1.5rem, 3vw, 2.5rem); }
-  .one { color: var(--muted); font-size: 0.95rem; max-width: 32rem; }
-  .go { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; white-space: nowrap; }
-  footer { color: var(--muted); font-size: 0.8rem; padding-top: 3rem; }
+  .num { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08"; font-size: 1.6rem; }
+  .name { font-family: "SoSo26", sans-serif; font-feature-settings: "ss07","ss08","liga","calt"; text-transform: uppercase; font-size: clamp(1.35rem, 2.6vw, 2.1rem); }
+  .one { color: var(--muted); font-size: 0.92rem; max-width: 34rem; }
+  li a:hover .one { color: inherit; }
+  .go { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.15em; white-space: nowrap; }
+  footer { color: var(--muted); font-size: 0.8rem; padding-top: 3rem; margin-top: 2rem; border-top: 1px solid var(--line); }
   @media (max-width: 720px) {
     li a { grid-template-columns: 2.5rem 1fr; }
     .go { display: none; }
@@ -46,21 +48,40 @@
 <div class="wrap">
   <header>
     <img src="brand/sottosopra-logo-white.png" alt="Sottosopra" />
-    <h1 class="display">10 direzioni</h1>
-    <p>Preview di homepage per il sito Sottosopra 2026. Stessa identità (logo, font SoSo26, bianco e nero), dieci approcci grafici diversi. Clicca per aprire. <strong style="color:#fff">Suggerimento:</strong> scrolla ogni pagina e, dove c'è, premi <kbd>S</kbd> per il ribaltamento.</p>
+    <h1 class="display">20 direzioni</h1>
+    <p>Preview di homepage per il sito Sottosopra 2026. Stessa identità (logo, font SoSo26, bianco e nero), venti approcci diversi in due tornate. Clicca per aprire. <strong style="color:#fff">Suggerimento:</strong> scrolla ogni pagina, e dove c'è prova a premere <kbd>S</kbd>.</p>
   </header>
+
+  <h2 class="section display">Tornata 2 — sistemi diversi</h2>
+  <p class="section-sub">Dieci linguaggi visivi differenti tra loro (texture, 3D, terminale, collage, cinema, radio…).</p>
   <ul>
-    <li><a href="v1.html"><span class="num">01</span><span><span class="name">Locandina</span><br><span class="one">Poster da concerto: denso, regoli, date come ancore, lineup giustificata.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v2.html"><span class="num">02</span><span><span class="name">Sistema Grezzo</span><br><span class="one">Brutalist/terminale: ticker, griglia esposta, label di sistema, coordinate.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v3.html"><span class="num">03</span><span><span class="name">Rivista</span><br><span class="one">Editorial indie: drop-cap, pull-quote, sezioni numerate, colophon.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v4.html"><span class="num">04</span><span><span class="name">Tipografia in Corsa</span><br><span class="one">Kinetic: nastri multipli a velocità diverse, tipografia in movimento.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v5.html"><span class="num">05</span><span><span class="name">Indice</span><br><span class="one">Catalogo tipografico riga-per-riga, austero, con hover che rivela.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v6.html"><span class="num">06</span><span><span class="name">Date Monstre</span><br><span class="one">I numeri 31·01·02 giganti come griglia portante della pagina.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v7.html"><span class="num">07</span><span><span class="name">Collage Controllato</span><br><span class="one">Fanzine/ransom-note: lettere ruotate, nastro adesivo, carta a quadretti.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v8.html"><span class="num">08</span><span><span class="name">Pannelli</span><br><span class="one">Split-screen modulare: hero a pannelli verticali, un artista ciascuno.</span></span><span class="go">Apri →</span></a></li>
-    <li><a href="v9.html"><span class="num">09</span><span><span class="name">Manifesto</span><br><span class="one">Dichiarazione gigante: "Non è un festival. È un modo di stare al mondo."</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v11.html"><span class="num">11</span><span><span class="name">Dither Machine</span><br><span class="one">Tutto a 1-bit: un Macintosh del 1984 che fa festa. Silhouette a punti.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v12.html"><span class="num">12</span><span><span class="name">Inchiostro Riso</span><br><span class="one">Fanzine fotocopiata a risografo: grana, ink-bleed, calore analogico.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v13.html"><span class="num">13</span><span><span class="name">Terminale Vivo</span><br><span class="one">Terminale hackerato: boot, ASCII art, programma come spreadsheet.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v14.html"><span class="num">14</span><span><span class="name">Canvas Festa</span><br><span class="one">La lineup non si scrolla, si trascina: tessere-domino su canvas infinito.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v15.html"><span class="num">15</span><span><span class="name">Incisione</span><br><span class="one">Line-art / cross-hatching da banconota: ritratti incisi, raffinato.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v16.html"><span class="num">16</span><span><span class="name">Cinema Muto</span><br><span class="one">Scroll come regia da film muto B/N: atti, frame, "Fine".</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v17.html"><span class="num">17</span><span><span class="name">Punto di Vista</span><br><span class="one">Cursore-lente che capovolge, spotlight nel buio, artisti che si rivelano.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v18.html"><span class="num">18</span><span><span class="name">Sticker Bomb</span><br><span class="one">Scrapbook/photo-dump: polaroid, nastro adesivo, bacheca. Maximalista.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v19.html"><span class="num">19</span><span><span class="name">Scultura Sottosopra</span><br><span class="one">Tipografia 3D estrusa che si capovolge nello spazio.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v20.html"><span class="num">20</span><span><span class="name">Nastro Radio</span><br><span class="one">Broadcast: ON AIR, ticker now-playing, lineup come playlist radio.</span></span><span class="go">Apri →</span></a></li>
+  </ul>
+
+  <h2 class="section display">Tornata 1 — editoriale minimale</h2>
+  <p class="section-sub">Le prime dieci, tutte nella famiglia Swiss/grottesco editoriale.</p>
+  <ul>
+    <li><a href="v1.html"><span class="num">01</span><span><span class="name">Locandina</span><br><span class="one">Poster da concerto: denso, regoli, date come ancore.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v2.html"><span class="num">02</span><span><span class="name">Sistema Grezzo</span><br><span class="one">Brutalist/terminale: ticker, griglia esposta, coordinate.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v3.html"><span class="num">03</span><span><span class="name">Rivista</span><br><span class="one">Editorial: drop-cap, pull-quote, sezioni numerate.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v4.html"><span class="num">04</span><span><span class="name">Tipografia in Corsa</span><br><span class="one">Kinetic: nastri multipli a velocità diverse.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v5.html"><span class="num">05</span><span><span class="name">Indice</span><br><span class="one">Catalogo tipografico riga-per-riga.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v6.html"><span class="num">06</span><span><span class="name">Date Monstre</span><br><span class="one">I numeri 31·01·02 giganti come griglia portante.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v7.html"><span class="num">07</span><span><span class="name">Collage Controllato</span><br><span class="one">Fanzine/ransom-note: lettere ruotate, nastro adesivo.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v8.html"><span class="num">08</span><span><span class="name">Pannelli</span><br><span class="one">Split-screen modulare a pannelli verticali.</span></span><span class="go">Apri →</span></a></li>
+    <li><a href="v9.html"><span class="num">09</span><span><span class="name">Manifesto</span><br><span class="one">Dichiarazione gigante che riempie lo schermo.</span></span><span class="go">Apri →</span></a></li>
     <li><a href="v10.html"><span class="num">10</span><span><span class="name">Capovolta</span><br><span class="one">Il concetto sottosopra reso layout: hero spaccato e specchiato.</span></span><span class="go">Apri →</span></a></li>
   </ul>
+
   <footer>Sottosopra APS · preview interne · bozze placeholder, non definitive · giugno 2026</footer>
 </div>
 </body>
